@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name ="descrtion" content = "welcome">
+    <title> HOME PAGE</title>
+     <!-- Javscript function  -->
+    <script>
+      function sayHello()
+      {
+        alert("Welcome To HML ")
+      }
+    </script>
+
+    <style media="screen">
+       fieldset{
+         background-color: #EFEFEF;
+         padding:10px;
+         border: 1px solid #CCC;
+       }
+       legend{
+         background-color: #FFF;
+         padding:5px;
+         border: 1px solid #CCC;
+         margin-bottom: 5px;
+
+       }
+
+    </style>
+  </head>
+  <body>
+
+    <form name = "Register" >
+
+      <fieldset>
+          <legend> Personal Information </legend>
+          <lable>User Name  </lable>
+          <input type = "text" value="" placeholder = "type your name Here" maxlength = "10">
+          <br>
+          <label>password</label>
+          <input type="password" name="password" >
+          <br>
+          <label>Meassges </label>
+          <br>
+
+          <textarea rows="6" cols="30" >Your Name : </textarea>
+          <br>
+          <!--file lable-->
+          <label > upload yor cv </label>
+          <input type = "file"> <br>
+
+          <input type = "checkbox">
+          <lable>Remeber Me </lable>
+          <br>
+    </fieldset>
+      <fieldset>
+        <legend> Yor Favourit </legend>
+        <!-- for choosing only one-->
+        <label for=""> Chooese Your browser</label>
+        <br>
+        <input type = "radio" name = "browser" value = "chrom">
+        <label>Google Chrom</label>
+        <br>
+        <input type = "radio" name = "browser" value = "Mozila Firefox">
+        <label>Mozila Firefox</label>
+        <br>
+        <input type = "radio" name = "browser" value = "Opera">
+        <label>Opera</label>
+
+
+        <!-- this will be hidden-->
+        <input type = "hidden" value = "testing">
+        <br>
+
+        <!-- for choosing only one-->
+        <label for=""> Chooese Your Mobile</label>
+        <br>
+        <input type = "radio" name = "Mobile" value = "iphone">
+        <label>iphone</label>
+        <br>
+        <input type = "radio" name = "Mobile" value = "Sumsung">
+        <label>Sumsung</label>
+        <br>
+        <input type = "radio" name = "Mobile" value = "Nokia">
+        <label>Nokia</label>
+        <br>
+        <!-- this will be hidden-->
+        <input type = "hidden" value = "testing">
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend> Submit Option </legend>
+        <select name ="time" >
+          <optgroup label="Soon">
+            <option disabled> Now </option>
+            <option> latter </option>
+            <option> Tomorow </option>
+          </optgroup>
+          <optgroup label="future">
+            <option value="23"> in 3 days </option>
+            <option selected> in one month </option>
+            <option > in three month </option>
+          </optgroup>
+
+
+        </select>
+
+        <input type ="submit" value = "Sign Up" >
+        <input type = "button" value ="Say Hello" onclick = "sayHello()">
+        <input type = "reset">
+    </fieldset>
+
+      <!--for images-->
+      <!--
+      <input type = "image" src = "xx.jpg" alt="we have Image here">
+       -->
+    </form>
+
+  </body>
+</html>

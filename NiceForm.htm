@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name ="descrtion" content ="Welcome to MY webside">
+        <title>Home Page (form)</title>
+        <!--styling the form-->
+        <style>
+            body
+            {
+                background-color:#EFEFEF;
+                font-family: Arial, Tahoma;
+            }
+            fieldset
+            {
+                background:#fff;
+                border: 1px solid #CCC;
+                padding: 10px;
+                margin: 20px auto;
+                width: 500px;
+            }
+            legend
+            {
+                background: #fff;
+                border:1px solid #ccc;
+                padding: 10px;
+            }
+            label
+            {
+                margin-bottom: 10px;
+                display: block;
+            }
+            input
+            {
+                margin-bottom: 10px;
+            }
+            input[type ="text"],
+            input[type ="password"],
+            textarea
+            {
+                padding: 8px;
+                width: 97%;
+                display: block;
+            }
+            hr
+            {
+                border :1px solid #EEE;
+            }
+            textarea
+            {
+                padding: 12px;
+                height: 210px;
+            }
+            input[type ="submit"],
+            input[type ="reset"],
+            select
+            {
+                padding: 10px;
+                width: 20%;
+            }
+        </style>
+    </head>
+    <body>
+        <form  name = "Register" >
+            <fieldset>
+                <legend> Personal Information </legend>
+                <lable> User Name  </lable>
+                <input type ="text" name = "name">
+                <lable> Password  </lable>
+                <input type = "password" name = "password">
+                <lable> Email </lable>
+                <input type = "text" name="email">
+                <lable name= "Gender"> Gender </lable>
+
+                 <select>
+                     <option name = "male" value = "male" > male</option>
+                     <option name = "female" value = "female"> Female</option>
+                 </select>
+            </fieldset>
+        
+            <fieldset>
+                <legend> Your Favourits </legend>
+                <label > Your Favourits Text Editor </label>
+                <input type="radio" name="Editor"> VS code <br>
+                <input type="radio" name="Editor"> subline Text <br> 
+                <input type="radio" name="Editor"> Cs 50 IDE
+                <hr>
+                <label > Your Favourits browser </label>
+                <input type="radio" name="browser"> Google Chrom <br>
+                <input type="radio" name="browser"> Mozila Firefox <br> 
+                <input type="radio" name="browser"> Opera
+                 
+                <hr>
+                <label > Your Favourits Operation System </label>
+                <input type="checkbox" > Apple <br>
+                <input type="checkbox" > Linux <br> 
+                <input type="checkbox"> Windows
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Message</legend>
+                <textarea></textarea>
+                <input type = "submit">
+                <input type = "reset">
+            </fieldset>
+            
+        </form>
+    </body>
+</html>
